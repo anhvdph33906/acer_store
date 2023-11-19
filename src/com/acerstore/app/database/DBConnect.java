@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 public class DBConnect {
     private static String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-    private static String dburl="jdbc:sqlserver://localhost\\VUDUCANH-PC\\SQLEXPRESS:1433;databaseName=AcerStore;encrypt=true;trustServerCertificate=true;";
+    private static String dburl="jdbc:sqlserver://DESKTOP-TARJ4AB\\DESKTOP-TARJ4AB\\SQLEXPRESS:1433;databaseName=AcerStore;encrypt=true;trustServerCertificate=true;";
     private static String user="sa";
-    private static String pass="0";
+    private static String pass="28052004";
      
     static{
         try {

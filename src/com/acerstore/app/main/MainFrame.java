@@ -150,4 +150,17 @@ public class MainFrame extends JFrame {
         this.setLocationRelativeTo(null);
         this.setVisible(true);
     }
+    public class App {
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            try {
+                UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
+                new MainFrame();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
+    }
+    }
 }

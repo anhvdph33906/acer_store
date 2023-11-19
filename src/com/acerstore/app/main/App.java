@@ -1,4 +1,4 @@
-package com.acerstore.app.main;
+    package com.acerstore.app.main;
 
 import javax.swing.*;
 
