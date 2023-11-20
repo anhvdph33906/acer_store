@@ -105,38 +105,7 @@ public class KhuyenMai extends javax.swing.JPanel {
 //        this.rows = 0;
 //        this.edit();
 //    }
-    void prev() {
-        if (this.rows < 1) {
-            this.rows = tblKhuyenMai.getRowCount() - 1;
-            this.edit();
-        } else {
-            this.rows--;
-            this.edit();
-        }
-    }
 
-//    void prev1() {
-//        if (this.rows > 0) {
-//            this.rows--;
-//            this.edit();
-//        }
-//    }
-    void next() {
-        if (this.rows < tblKhuyenMai.getRowCount() - 1) {
-            this.rows++;
-            this.edit();
-        } else {
-            this.rows = 0;
-            this.edit();
-        }
-    }
-
-//    void next1() {
-//        if (this.rows < tblKhuyenMai.getRowCount() - 1) {
-//            this.rows++;
-//            this.edit();
-//        }
-//    }
     void last() {
         int maxPage = (int) Math.ceil((double) list.size() / pageSize);
         if (currentPage < maxPage) {
