@@ -8,7 +8,7 @@ public class DBConnect {
     private static String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
     private static String dburl="jdbc:sqlserver://localhost\\VUDUCANH-PC\\SQLEXPRESS:1433;databaseName=AcerStore;encrypt=true;trustServerCertificate=true;";
     private static String user="sa";
-    private static String pass="0";
+    private static String pass="123123123";
      
     static{
         try {
