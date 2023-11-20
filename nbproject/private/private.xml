@@ -2,6 +2,17 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/D:/git/acer_store/src/com/acerstore/app/model/SanPhamChiTiets.java</file>
+            <file>file:/D:/git/acer_store/src/com/acerstore/app/model/ThongSo.java</file>
+            <file>file:/D:/git/acer_store/src/Interfaces/SanPhamChiTiet.java</file>
+            <file>file:/D:/git/acer_store/src/Interfaces/thongSoJDalog.java</file>
+            <file>file:/D:/git/acer_store/src/com/acerstore/app/main/App.java</file>
+            <file>file:/D:/git/acer_store/src/com/acerstore/app/dao/SanPhamDao.java</file>
+            <file>file:/D:/git/acer_store/src/com/acerstore/app/model/SanPhamNew.java</file>
+            <file>file:/D:/git/acer_store/src/com/acerstore/app/view/SanPham.java</file>
+            <file>file:/D:/git/acer_store/src/com/acerstore/app/dao/SanPhamChiTietDao.java</file>
+            <file>file:/D:/git/acer_store/src/com/acerstore/app/main/MainFrame.java</file>
+        </group>
     </open-files>
 </project-private>

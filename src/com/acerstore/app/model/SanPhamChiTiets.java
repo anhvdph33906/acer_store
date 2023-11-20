@@ -11,6 +11,7 @@ package com.acerstore.app.model;
 public class SanPhamChiTiets {
     private String maSp;
     private String ten;
+    private String imei;
     private int soLuong;
     private double gia;
     private String manHinh;
@@ -26,9 +27,10 @@ public class SanPhamChiTiets {
     public SanPhamChiTiets() {
     }
 
-    public SanPhamChiTiets(String maSp, String ten, int soLuong, double gia, String manHinh, String Ram, String kichThuoc, String cPU, String heDieuHanh, String trongLuong, String mau, boolean trangThai, String moTa) {
+    public SanPhamChiTiets(String maSp, String ten, String imei, int soLuong, double gia, String manHinh, String Ram, String kichThuoc, String cPU, String heDieuHanh, String trongLuong, String mau, boolean trangThai, String moTa) {
         this.maSp = maSp;
         this.ten = ten;
+        this.imei = imei;
         this.soLuong = soLuong;
         this.gia = gia;
         this.manHinh = manHinh;
@@ -56,6 +58,14 @@ public class SanPhamChiTiets {
 
     public void setTen(String ten) {
         this.ten = ten;
+    }
+
+    public String getImei() {
+        return imei;
+    }
+
+    public void setImei(String imei) {
+        this.imei = imei;
     }
 
     public int getSoLuong() {
@@ -148,6 +158,8 @@ public class SanPhamChiTiets {
 
     @Override
     public String toString() {
-        return "SanPhamChiTiets{" + "maSp=" + maSp + ", ten=" + ten + ", soLuong=" + soLuong + ", gia=" + gia + ", manHinh=" + manHinh + ", Ram=" + Ram + ", kichThuoc=" + kichThuoc + ", cPU=" + cPU + ", heDieuHanh=" + heDieuHanh + ", trongLuong=" + trongLuong + ", mau=" + mau + ", trangThai=" + trangThai + ", moTa=" + moTa + '}';
+        return "SanPhamChiTiets{" + "maSp=" + maSp + ", ten=" + ten + ", imei=" + imei + ", soLuong=" + soLuong + ", gia=" + gia + ", manHinh=" + manHinh + ", Ram=" + Ram + ", kichThuoc=" + kichThuoc + ", cPU=" + cPU + ", heDieuHanh=" + heDieuHanh + ", trongLuong=" + trongLuong + ", mau=" + mau + ", trangThai=" + trangThai + ", moTa=" + moTa + '}';
     }
+
+    
 }
