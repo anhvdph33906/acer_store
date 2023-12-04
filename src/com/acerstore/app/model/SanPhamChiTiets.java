@@ -9,71 +9,114 @@ package com.acerstore.app.model;
  * @author ASUS
  */
 public class SanPhamChiTiets {
-    private String maSp;
-    private String ten;
-    private String imei;
-    private int soLuong;
+    private String maSpct;
+    SanPhamNew sp;
+    Imei im;
+    ManHinh mh;
+    Ram ra;
+    KichThuoc kt;
+    CPU cp;
+    HeDieuHanh hdh;
+    OCung oc;
+    Mau ma;
+    private int soluong;
     private double gia;
-    private String manHinh;
-    private String Ram;
-    private String kichThuoc;
-    private String cPU;
-    private String heDieuHanh;
-    private String trongLuong;
-    private String mau;
-    private boolean trangThai;
-    private String moTa;
 
     public SanPhamChiTiets() {
     }
 
-    public SanPhamChiTiets(String maSp, String ten, String imei, int soLuong, double gia, String manHinh, String Ram, String kichThuoc, String cPU, String heDieuHanh, String trongLuong, String mau, boolean trangThai, String moTa) {
-        this.maSp = maSp;
-        this.ten = ten;
-        this.imei = imei;
-        this.soLuong = soLuong;
+    public SanPhamChiTiets(String maSpct, int soluong, double gia) {
+        this.maSpct = maSpct;
+        this.soluong = soluong;
         this.gia = gia;
-        this.manHinh = manHinh;
-        this.Ram = Ram;
-        this.kichThuoc = kichThuoc;
-        this.cPU = cPU;
-        this.heDieuHanh = heDieuHanh;
-        this.trongLuong = trongLuong;
-        this.mau = mau;
-        this.trangThai = trangThai;
-        this.moTa = moTa;
     }
 
-    public String getMaSp() {
-        return maSp;
+    public String getMaSpct() {
+        return maSpct;
     }
 
-    public void setMaSp(String maSp) {
-        this.maSp = maSp;
+    public void setMaSpct(String maSpct) {
+        this.maSpct = maSpct;
     }
 
-    public String getTen() {
-        return ten;
+    public SanPhamNew getSp() {
+        return sp;
     }
 
-    public void setTen(String ten) {
-        this.ten = ten;
+    public void setSp(SanPhamNew sp) {
+        this.sp = sp;
     }
 
-    public String getImei() {
-        return imei;
+    public Imei getIm() {
+        return im;
     }
 
-    public void setImei(String imei) {
-        this.imei = imei;
+    public void setIm(Imei im) {
+        this.im = im;
     }
 
-    public int getSoLuong() {
-        return soLuong;
+    public ManHinh getMh() {
+        return mh;
     }
 
-    public void setSoLuong(int soLuong) {
-        this.soLuong = soLuong;
+    public void setMh(ManHinh mh) {
+        this.mh = mh;
+    }
+
+    public Ram getRa() {
+        return ra;
+    }
+
+    public void setRa(Ram ra) {
+        this.ra = ra;
+    }
+
+    public KichThuoc getKt() {
+        return kt;
+    }
+
+    public void setKt(KichThuoc kt) {
+        this.kt = kt;
+    }
+
+    public CPU getCp() {
+        return cp;
+    }
+
+    public void setCp(CPU cp) {
+        this.cp = cp;
+    }
+
+    public HeDieuHanh getHdh() {
+        return hdh;
+    }
+
+    public void setHdh(HeDieuHanh hdh) {
+        this.hdh = hdh;
+    }
+
+    public OCung getOc() {
+        return oc;
+    }
+
+    public void setOc(OCung oc) {
+        this.oc = oc;
+    }
+
+    public Mau getMa() {
+        return ma;
+    }
+
+    public void setMa(Mau ma) {
+        this.ma = ma;
+    }
+
+    public int getSoluong() {
+        return soluong;
+    }
+
+    public void setSoluong(int soluong) {
+        this.soluong = soluong;
     }
 
     public double getGia() {
@@ -84,82 +127,10 @@ public class SanPhamChiTiets {
         this.gia = gia;
     }
 
-    public String getManHinh() {
-        return manHinh;
-    }
-
-    public void setManHinh(String manHinh) {
-        this.manHinh = manHinh;
-    }
-
-    public String getRam() {
-        return Ram;
-    }
-
-    public void setRam(String Ram) {
-        this.Ram = Ram;
-    }
-
-    public String getKichThuoc() {
-        return kichThuoc;
-    }
-
-    public void setKichThuoc(String kichThuoc) {
-        this.kichThuoc = kichThuoc;
-    }
-
-    public String getcPU() {
-        return cPU;
-    }
-
-    public void setcPU(String cPU) {
-        this.cPU = cPU;
-    }
-
-    public String getHeDieuHanh() {
-        return heDieuHanh;
-    }
-
-    public void setHeDieuHanh(String heDieuHanh) {
-        this.heDieuHanh = heDieuHanh;
-    }
-
-    public String getTrongLuong() {
-        return trongLuong;
-    }
-
-    public void setTrongLuong(String trongLuong) {
-        this.trongLuong = trongLuong;
-    }
-
-    public String getMau() {
-        return mau;
-    }
-
-    public void setMau(String mau) {
-        this.mau = mau;
-    }
-
-    public boolean isTrangThai() {
-        return trangThai;
-    }
-
-    public void setTrangThai(boolean trangThai) {
-        this.trangThai = trangThai;
-    }
-
-    public String getMoTa() {
-        return moTa;
-    }
-
-    public void setMoTa(String moTa) {
-        this.moTa = moTa;
-    }
-
     @Override
     public String toString() {
-        return "SanPhamChiTiets{" + "maSp=" + maSp + ", ten=" + ten + ", imei=" + imei + ", soLuong=" + soLuong + ", gia=" + gia + ", manHinh=" + manHinh + ", Ram=" + Ram + ", kichThuoc=" + kichThuoc + ", cPU=" + cPU + ", heDieuHanh=" + heDieuHanh + ", trongLuong=" + trongLuong + ", mau=" + mau + ", trangThai=" + trangThai + ", moTa=" + moTa + '}';
+        return "SanPhamChiTiets{" + "maSpct=" + maSpct + ", sp=" + sp + ", im=" + im + ", mh=" + mh + ", ra=" + ra + ", kt=" + kt + ", cp=" + cp + ", hdh=" + hdh + ", oc=" + oc + ", ma=" + ma + ", soluong=" + soluong + ", gia=" + gia + '}';
     }
-
     
+
 }

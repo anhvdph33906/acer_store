@@ -11,23 +11,36 @@ import java.util.Date;
  * @author ASUS
  */
 public class SanPhamNew {
+    private int spid;
     private String maSP;
     private String tenSP;
     private String xuatXu;
-    private Date ngayRaMat;
+    private String ngayRaMat;
     private boolean trangThai;
     private byte[] hinhAnh;
+    private String Mota;
+    DanhMucs danhmuc;
 
     public SanPhamNew() {
     }
 
-    public SanPhamNew(String maSP, String tenSP, String xuatXu, Date ngayRaMat, boolean trangThai, byte[] hinhAnh) {
+    public SanPhamNew(int spid, String maSP, String tenSP, String xuatXu, String ngayRaMat, boolean trangThai, byte[] hinhAnh, String Mota) {
+        this.spid = spid;
         this.maSP = maSP;
         this.tenSP = tenSP;
         this.xuatXu = xuatXu;
         this.ngayRaMat = ngayRaMat;
         this.trangThai = trangThai;
         this.hinhAnh = hinhAnh;
+        this.Mota = Mota;
+    }
+
+    public int getSpid() {
+        return spid;
+    }
+
+    public void setSpid(int spid) {
+        this.spid = spid;
     }
 
     public String getMaSP() {
@@ -54,11 +67,11 @@ public class SanPhamNew {
         this.xuatXu = xuatXu;
     }
 
-    public Date getNgayRaMat() {
+    public String getNgayRaMat() {
         return ngayRaMat;
     }
 
-    public void setNgayRaMat(Date ngayRaMat) {
+    public void setNgayRaMat(String ngayRaMat) {
         this.ngayRaMat = ngayRaMat;
     }
 
@@ -78,9 +91,25 @@ public class SanPhamNew {
         this.hinhAnh = hinhAnh;
     }
 
+    public String getMota() {
+        return Mota;
+    }
+
+    public void setMota(String Mota) {
+        this.Mota = Mota;
+    }
+
+    public DanhMucs getDanhmuc() {
+        return danhmuc;
+    }
+
+    public void setDanhmuc(DanhMucs danhmuc) {
+        this.danhmuc = danhmuc;
+    }
+
     @Override
     public String toString() {
-        return "SanPhamNew{" + "maSP=" + maSP + ", tenSP=" + tenSP + ", xuatXu=" + xuatXu + ", ngayRaMat=" + ngayRaMat + ", trangThai=" + trangThai + ", hinhAnh=" + hinhAnh + '}';
+        return "SanPhamNew{" + "spid=" + spid + ", maSP=" + maSP + ", tenSP=" + tenSP + ", xuatXu=" + xuatXu + ", ngayRaMat=" + ngayRaMat + ", trangThai=" + trangThai + ", hinhAnh=" + hinhAnh + ", Mota=" + Mota + ", danhmuc=" + danhmuc + '}';
     }
 
     

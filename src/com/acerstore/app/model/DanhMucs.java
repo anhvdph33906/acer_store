@@ -9,22 +9,22 @@ package com.acerstore.app.model;
  * @author ASUS
  */
 public class DanhMucs {
-    private String maDm;
+    private int maDm;
     private String tenDm;
 
     public DanhMucs() {
     }
 
-    public DanhMucs(String maDm, String tenDm) {
+    public DanhMucs(int maDm, String tenDm) {
         this.maDm = maDm;
         this.tenDm = tenDm;
     }
 
-    public String getMaDm() {
+    public int getMaDm() {
         return maDm;
     }
 
-    public void setMaDm(String maDm) {
+    public void setMaDm(int maDm) {
         this.maDm = maDm;
     }
 
@@ -38,7 +38,9 @@ public class DanhMucs {
 
     @Override
     public String toString() {
-        return "DanhMuc{" + "maDm=" + maDm + ", tenDm=" + tenDm + '}';
+        return "DanhMucs{" + "maDm=" + maDm + ", tenDm=" + tenDm + '}';
     }
+
+  
     
 }
