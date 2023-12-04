@@ -18,9 +18,10 @@ import java.util.logging.Logger;
 public class DBConnection {
     private static final String USERNAME = "sa";
     private static final String PASSWORD = "0";
-    private static final String SERVER = "VUDUCANH-PC";
+    private static final String SERVER = "localhost";
     private static final String PORT = "1433";
     private static final String DATABASE_NAME = "ahihi";
+    //Acerstore19_11
     private static final boolean USING_SSL = false;
 
     private static String CONNECT_STRING;

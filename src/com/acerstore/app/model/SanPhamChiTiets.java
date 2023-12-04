@@ -9,17 +9,16 @@ package com.acerstore.app.model;
  * @author ASUS
  */
 public class SanPhamChiTiets {
-    private String maSp;
+    private int sanPhamChiTietId;
     private String ten;
-    private String imei;
     private int soLuong;
     private double gia;
-//    private String manHinh;
-    private String Ram;
-//    private String kichThuoc;
+    private String manHinh;
+    private int Ram;
+    private float kichThuoc;
     private String cPU;
     private String heDieuHanh;
-//    private String trongLuong;
+    private float trongLuong;
     private String mau;
     private boolean trangThai;
     private String moTa;
@@ -27,29 +26,28 @@ public class SanPhamChiTiets {
     public SanPhamChiTiets() {
     }
 
-    public SanPhamChiTiets(String maSp, String ten, String imei, int soLuong, double gia, String Ram, String cPU, String heDieuHanh, String mau, boolean trangThai, String moTa) {
-        this.maSp = maSp;
+    public SanPhamChiTiets(int sanPhamChiTietId, String ten, int soLuong, double gia, String manHinh, int Ram, float kichThuoc, String cPU, String heDieuHanh, float trongLuong, String mau, boolean trangThai, String moTa) {
+        this.sanPhamChiTietId = sanPhamChiTietId;
         this.ten = ten;
-        this.imei = imei;
         this.soLuong = soLuong;
         this.gia = gia;
-//        this.manHinh = manHinh;
+        this.manHinh = manHinh;
         this.Ram = Ram;
-//        this.kichThuoc = kichThuoc;
+        this.kichThuoc = kichThuoc;
         this.cPU = cPU;
         this.heDieuHanh = heDieuHanh;
-//        this.trongLuong = trongLuong;
+        this.trongLuong = trongLuong;
         this.mau = mau;
         this.trangThai = trangThai;
         this.moTa = moTa;
     }
 
-    public String getMaSp() {
-        return maSp;
+    public int getSanPhamChiTietId() {
+        return sanPhamChiTietId;
     }
 
-    public void setMaSp(String maSp) {
-        this.maSp = maSp;
+    public void setSanPhamChiTietId(int sanPhamChiTietId) {
+        this.sanPhamChiTietId = sanPhamChiTietId;
     }
 
     public String getTen() {
@@ -58,14 +56,6 @@ public class SanPhamChiTiets {
 
     public void setTen(String ten) {
         this.ten = ten;
-    }
-
-    public String getImei() {
-        return imei;
-    }
-
-    public void setImei(String imei) {
-        this.imei = imei;
     }
 
     public int getSoLuong() {
@@ -84,29 +74,29 @@ public class SanPhamChiTiets {
         this.gia = gia;
     }
 
-//    public String getManHinh() {
-//        return manHinh;
-//    }
+    public String getManHinh() {
+        return manHinh;
+    }
 
-//    public void setManHinh(String manHinh) {
-//        this.manHinh = manHinh;
-//    }
+    public void setManHinh(String manHinh) {
+        this.manHinh = manHinh;
+    }
 
-    public String getRam() {
+    public int getRam() {
         return Ram;
     }
 
-    public void setRam(String Ram) {
+    public void setRam(int Ram) {
         this.Ram = Ram;
     }
 
-//    public String getKichThuoc() {
-//        return kichThuoc;
-//    }
-//
-//    public void setKichThuoc(String kichThuoc) {
-//        this.kichThuoc = kichThuoc;
-//    }
+    public float getKichThuoc() {
+        return kichThuoc;
+    }
+
+    public void setKichThuoc(float kichThuoc) {
+        this.kichThuoc = kichThuoc;
+    }
 
     public String getcPU() {
         return cPU;
@@ -124,14 +114,14 @@ public class SanPhamChiTiets {
         this.heDieuHanh = heDieuHanh;
     }
 
-//    public String getTrongLuong() {
-//        return trongLuong;
-//    }
+    public float getTrongLuong() {
+        return trongLuong;
+    }
 
-//    public void setTrongLuong(String trongLuong) {
-//        this.trongLuong = trongLuong;
-//    }
-//
+    public void setTrongLuong(float trongLuong) {
+        this.trongLuong = trongLuong;
+    }
+
     public String getMau() {
         return mau;
     }
@@ -158,8 +148,8 @@ public class SanPhamChiTiets {
 
     @Override
     public String toString() {
-        return "SanPhamChiTiets{" + "maSp=" + maSp + ", ten=" + ten + ", imei=" + imei + ", soLuong=" + soLuong + ", gia=" + gia + ", Ram=" + Ram +  ", cPU=" + cPU + ", heDieuHanh=" + heDieuHanh + ", mau=" + mau + ", trangThai=" + trangThai + ", moTa=" + moTa + '}';
+        return "SanPhamChiTiets{" + "sanPhamChiTietId=" + sanPhamChiTietId + ", ten=" + ten + ", soLuong=" + soLuong + ", gia=" + gia + ", manHinh=" + manHinh + ", Ram=" + Ram + ", kichThuoc=" + kichThuoc + ", cPU=" + cPU + ", heDieuHanh=" + heDieuHanh + ", trongLuong=" + trongLuong + ", mau=" + mau + ", trangThai=" + trangThai + ", moTa=" + moTa + '}';
     }
 
-    
+ 
 }

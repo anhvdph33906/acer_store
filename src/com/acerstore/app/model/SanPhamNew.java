@@ -16,12 +16,12 @@ public class SanPhamNew {
     private String xuatXu;
     private Date ngayRaMat;
     private boolean trangThai;
-    private byte[] hinhAnh;
+    private String hinhAnh;
 
     public SanPhamNew() {
     }
 
-    public SanPhamNew(String maSP, String tenSP, String xuatXu, Date ngayRaMat, boolean trangThai, byte[] hinhAnh) {
+    public SanPhamNew(String maSP, String tenSP, String xuatXu, Date ngayRaMat, boolean trangThai, String hinhAnh) {
         this.maSP = maSP;
         this.tenSP = tenSP;
         this.xuatXu = xuatXu;
@@ -70,11 +70,11 @@ public class SanPhamNew {
         this.trangThai = trangThai;
     }
 
-    public byte[] getHinhAnh() {
+    public String getHinhAnh() {
         return hinhAnh;
     }
 
-    public void setHinhAnh(byte[] hinhAnh) {
+    public void setHinhAnh(String hinhAnh) {
         this.hinhAnh = hinhAnh;
     }
 
@@ -82,6 +82,4 @@ public class SanPhamNew {
     public String toString() {
         return "SanPhamNew{" + "maSP=" + maSP + ", tenSP=" + tenSP + ", xuatXu=" + xuatXu + ", ngayRaMat=" + ngayRaMat + ", trangThai=" + trangThai + ", hinhAnh=" + hinhAnh + '}';
     }
-
-    
 }
